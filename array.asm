@@ -79,6 +79,12 @@ bne $t7, $zero, soma	# Enquanto o valor de $t7 for diferente de zero, volte para
 
 # (3) Salvar o vetor modificado
 
+
+
+li $v0, 4 		# Imprimindo uma linha
+la $a0, linha
+syscall
+
 # (4) Imprimir o novo vetor
 addi $t3,$zero,16
 imprime:
